@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chang Chi — Data Systems</title>
+  <meta name="description" content="Personal portfolio of Chang Chi, a Boston University data science student working across data engineering, business analysis, research, and project leadership.">
+  <meta name="theme-color" content="#070A12">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Chang Chi, back to top">
+        <span class="brand-mark" aria-hidden="true">CC</span>
+        <span class="brand-name">CHANG CHI</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#journey">Journey</a>
+        <a href="#connect">Connect</a>
+        <button class="effects-toggle" id="effects-toggle" type="button" aria-pressed="true" hidden>
+          <span class="effects-dot" aria-hidden="true"></span>
+          <span id="effects-label">Effects: On</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-head">
+          <p class="eyebrow">DATA SCIENCE / BUSINESS / SYSTEMS</p>
+          <p class="hero-name"><span>CHANG CHI</span><span class="hero-name-line" aria-hidden="true"></span></p>
+          <h1 class="hero-title" id="hero-title">
+            <span>TURNING COMPLEXITY</span>
+            <span class="hero-title-accent">INTO CLARITY.</span>
+          </h1>
+        </div>
+
+        <div class="hero-lower">
+          <div class="hero-copy">
+            <p class="hero-intro">I'm a Boston University data science student with a business lens. I connect data, systems, and business questions to build useful tools and clearer decisions.</p>
+
+            <ul class="hero-meta" aria-label="Location and education">
+              <li>Boston, MA</li>
+              <li>Boston University</li>
+              <li>Expected graduation: May 2027</li>
+            </ul>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore My Work <span aria-hidden="true">→</span></a>
+              <a class="button button-secondary" href="#journey">My Journey <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+
+          <div class="schematic-frame" aria-hidden="true">
+          <span class="schematic-tag">SYSTEM SCHEMATIC / 01</span>
+          <svg class="schematic schematic-desktop" viewBox="0 0 640 440" role="presentation" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <linearGradient id="frameGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#5DEBFF" stop-opacity="0.55"/>
+                <stop offset="0.55" stop-color="#5DEBFF" stop-opacity="0.1"/>
+                <stop offset="1" stop-color="#B69CFF" stop-opacity="0.4"/>
+              </linearGradient>
+              <linearGradient id="nodeGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#142033"/>
+                <stop offset="1" stop-color="#0B111D"/>
+              </linearGradient>
+              <filter id="softGlow" x="-200%" y="-200%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <pattern id="microGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+                <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#A6B4CA" stroke-opacity="0.07" stroke-width="1"/>
+              </pattern>
+            </defs>
+
+            <rect x="8" y="8" width="624" height="424" rx="2" fill="#0A0F19" stroke="url(#frameGradient)"/>
+            <rect x="24" y="24" width="592" height="384" fill="url(#microGrid)" opacity="0.9"/>
+
+            <g stroke="#5DEBFF" stroke-opacity="0.55" stroke-width="1">
+              <path d="M 8 62 V 8 H 62"/>
+              <path d="M 578 8 H 632 V 62"/>
+              <path d="M 632 378 V 432 H 578"/>
+              <path d="M 62 432 H 8 V 378"/>
+            </g>
+
+            <path id="flowPath" d="M 216 100 H 508 V 340 H 216" fill="none" stroke="#5DEBFF" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="7 7"/>
+            <path d="M 48 148 H 216 V 292 H 424" fill="none" stroke="#B69CFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="3 8"/>
+
+            <circle class="flow-dot" r="5" fill="#5DEBFF" filter="url(#softGlow)">
+              <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#flowPath" xlink:href="#flowPath"/>
+              </animateMotion>
+            </circle>
+
+            <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+              <g class="schematic-node">
+                <rect x="48" y="68" width="168" height="64" fill="url(#nodeGradient)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="48" y="68" width="4" height="64" fill="#5DEBFF" fill-opacity="0.85"/>
+                <text x="68" y="97" fill="#EDF4FF" font-size="19" font-weight="700" letter-spacing="0.5">RAW DATA</text>
+                <text x="68" y="118" fill="#A6B4CA" font-size="17" letter-spacing="0.3">INGEST</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="424" y="68" width="168" height="64" fill="url(#nodeGradient)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="424" y="68" width="4" height="64" fill="#B69CFF" fill-opacity="0.85"/>
+                <text x="444" y="97" fill="#EDF4FF" font-size="19" font-weight="700" letter-spacing="0.5">VALIDATION</text>
+                <text x="444" y="118" fill="#A6B4CA" font-size="17" letter-spacing="0.3">QUALITY CHECK</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="424" y="308" width="168" height="64" fill="url(#nodeGradient)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="424" y="308" width="4" height="64" fill="#5DEBFF" fill-opacity="0.85"/>
+                <text x="444" y="337" fill="#EDF4FF" font-size="19" font-weight="700" letter-spacing="0.5">PIPELINE</text>
+                <text x="444" y="358" fill="#A6B4CA" font-size="17" letter-spacing="0.3">TRANSFORM</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="48" y="308" width="168" height="64" fill="url(#nodeGradient)" stroke="#B69CFF" stroke-opacity="0.5"/>
+                <rect x="48" y="308" width="4" height="64" fill="#FFD166" fill-opacity="0.9"/>
+                <text x="68" y="337" fill="#EDF4FF" font-size="19" font-weight="700" letter-spacing="0.5">INSIGHT</text>
+                <text x="68" y="358" fill="#A6B4CA" font-size="17" letter-spacing="0.3">DECISION</text>
+              </g>
+
+              <text x="48" y="404" fill="#5DEBFF" font-size="17" letter-spacing="0.4">CONCEPTUAL / NOT LIVE DATA</text>
+              <text x="592" y="404" fill="#A6B4CA" font-size="17" text-anchor="end" letter-spacing="0.4">CC // SYSTEMS MAP</text>
+            </g>
+          </svg>
+
+          <svg class="schematic schematic-mobile" viewBox="0 0 360 440" role="presentation" focusable="false" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <linearGradient id="frameGradientMobile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#5DEBFF" stop-opacity="0.55"/>
+                <stop offset="0.55" stop-color="#5DEBFF" stop-opacity="0.1"/>
+                <stop offset="1" stop-color="#B69CFF" stop-opacity="0.4"/>
+              </linearGradient>
+              <linearGradient id="nodeGradientMobile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#142033"/>
+                <stop offset="1" stop-color="#0B111D"/>
+              </linearGradient>
+              <filter id="softGlowMobile" x="-200%" y="-200%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <pattern id="microGridMobile" width="24" height="24" patternUnits="userSpaceOnUse">
+                <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#A6B4CA" stroke-opacity="0.07" stroke-width="1"/>
+              </pattern>
+            </defs>
+
+            <rect x="8" y="8" width="344" height="424" rx="2" fill="#0A0F19" stroke="url(#frameGradientMobile)"/>
+            <rect x="24" y="24" width="312" height="384" fill="url(#microGridMobile)" opacity="0.9"/>
+
+            <g stroke="#5DEBFF" stroke-opacity="0.55" stroke-width="1">
+              <path d="M 8 60 V 8 H 60"/>
+              <path d="M 300 8 H 352 V 60"/>
+              <path d="M 352 380 V 432 H 300"/>
+              <path d="M 60 432 H 8 V 380"/>
+            </g>
+
+            <path id="flowPathMobile" d="M 170 95 H 265 V 335 H 170" fill="none" stroke="#5DEBFF" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="7 7"/>
+
+            <circle class="flow-dot" r="5" fill="#5DEBFF" filter="url(#softGlowMobile)">
+              <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#flowPathMobile" xlink:href="#flowPathMobile"/>
+              </animateMotion>
+            </circle>
+
+            <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+              <g class="schematic-node">
+                <rect x="20" y="60" width="150" height="70" fill="url(#nodeGradientMobile)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="20" y="60" width="4" height="70" fill="#5DEBFF" fill-opacity="0.85"/>
+                <text x="38" y="88" fill="#EDF4FF" font-size="18" font-weight="700" letter-spacing="0.3">RAW DATA</text>
+                <text x="38" y="110" fill="#A6B4CA" font-size="17" letter-spacing="0.2">INGEST</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="190" y="60" width="150" height="70" fill="url(#nodeGradientMobile)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="190" y="60" width="4" height="70" fill="#B69CFF" fill-opacity="0.85"/>
+                <text x="208" y="88" fill="#EDF4FF" font-size="18" font-weight="700" letter-spacing="0.2">VALIDATION</text>
+                <text x="208" y="110" fill="#A6B4CA" font-size="17" letter-spacing="0.2">QUALITY</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="190" y="300" width="150" height="70" fill="url(#nodeGradientMobile)" stroke="#5DEBFF" stroke-opacity="0.45"/>
+                <rect x="190" y="300" width="4" height="70" fill="#5DEBFF" fill-opacity="0.85"/>
+                <text x="208" y="328" fill="#EDF4FF" font-size="18" font-weight="700" letter-spacing="0.2">PIPELINE</text>
+                <text x="208" y="350" fill="#A6B4CA" font-size="17" letter-spacing="0.2">TRANSFORM</text>
+              </g>
+
+              <g class="schematic-node">
+                <rect x="20" y="300" width="150" height="70" fill="url(#nodeGradientMobile)" stroke="#B69CFF" stroke-opacity="0.5"/>
+                <rect x="20" y="300" width="4" height="70" fill="#FFD166" fill-opacity="0.9"/>
+                <text x="38" y="328" fill="#EDF4FF" font-size="18" font-weight="700" letter-spacing="0.2">INSIGHT</text>
+                <text x="38" y="350" fill="#A6B4CA" font-size="17" letter-spacing="0.2">DECISION</text>
+              </g>
+
+              <text x="20" y="408" fill="#5DEBFF" font-size="17" letter-spacing="0.2">CONCEPTUAL / NOT LIVE</text>
+              <text x="340" y="408" fill="#A6B4CA" font-size="17" text-anchor="end" letter-spacing="0.2">CC // 01</text>
+            </g>
+          </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head">
+            <p class="section-label">01 / ABOUT</p>
+            <h2 id="about-heading">Analytical by training. Practical by instinct.</h2>
+          </div>
+          <div class="section-copy">
+            <p>I'm pursuing a B.S. in Data Science at Boston University with a minor in Business Administration &amp; Management. My experience spans data pipelines, investment research, simulation modeling, and the operations behind an international education program.</p>
+            <p>I enjoy working at the point where technical details meet real decisions: organizing messy information, building dependable workflows, and making results easier for other people to use.</p>
+          </div>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <p class="card-index">01</p>
+            <h3>Build reliable systems</h3>
+            <p>Python, SQL, data validation, and structured workflows.</p>
+          </article>
+          <article class="focus-card">
+            <p class="card-index">02</p>
+            <h3>Ask business questions</h3>
+            <p>Connect analysis to operational and financial decisions.</p>
+          </article>
+          <article class="focus-card">
+            <p class="card-index">03</p>
+            <h3>Communicate clearly</h3>
+            <p>Translate technical work into useful explanations and shared plans.</p>
+          </article>
+        </div>
+
+        <div class="skills-panel" aria-labelledby="skills-heading">
+          <div class="skills-heading">
+            <p class="section-label">SKILL INDEX</p>
+            <h3 id="skills-heading">Tools and fluency</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h4>Programming &amp; Analysis</h4>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>R</li>
+                <li>pandas</li>
+                <li>NumPy</li>
+                <li>scikit-learn</li>
+                <li>Excel</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Data Systems</h4>
+              <ul class="tag-list">
+                <li>PostgreSQL</li>
+                <li>Hive</li>
+                <li>Trino</li>
+                <li>MongoDB</li>
+                <li>ETL</li>
+                <li>Data Validation</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Visualization &amp; Workflow</h4>
+              <ul class="tag-list">
+                <li>Plotly</li>
+                <li>Tableau</li>
+                <li>Git/GitHub</li>
+                <li>Jupyter</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Languages</h4>
+              <ul class="tag-list">
+                <li>Mandarin Chinese</li>
+                <li>English</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head">
+            <p class="section-label">02 / SELECTED WORK</p>
+            <h2 id="work-heading">Different challenges. A connected skill set.</h2>
+          </div>
+          <div class="section-copy">
+            <p>A selection of internship work, research, and projects at the intersection of data and decision-making.</p>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter projects by category" hidden>
+            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="data-engineering" aria-pressed="false">Data Engineering</button>
+            <button class="filter-btn" type="button" data-filter="business-operations" aria-pressed="false">Business &amp; Operations</button>
+            <button class="filter-btn" type="button" data-filter="research" aria-pressed="false">Research</button>
+          </div>
+          <p class="sr-only" id="filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          <noscript>
+            <p class="noscript-note">JavaScript is off. All selected work is shown below.</p>
+          </noscript>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-project-card data-category="data-engineering" aria-labelledby="project-nio">
+            <div class="project-topline">
+              <span class="project-type">Internship</span>
+              <span class="project-category">Data Engineering</span>
+            </div>
+            <p class="project-org">NIO</p>
+            <h3 id="project-nio">From Raw Records to Reliable Data</h3>
+            <p class="project-role">Data Analytics &amp; Data Engineering Intern</p>
+            <p class="project-date">Jul–Aug 2026</p>
+            <p class="project-summary">Contributed to an internal data platform by building pipeline components that standardized project, department, cost, and resource-planning data for downstream use.</p>
+            <ul class="tag-list" aria-label="Technologies and methods">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>ETL</li>
+              <li>Data Validation</li>
+            </ul>
+            <details class="project-details">
+              <summary>Explore the work</summary>
+              <div class="details-body">
+                <h4>Challenge</h4>
+                <p>Historical and incoming records needed consistent processing rules before they could support internal applications.</p>
+                <h4>Contribution</h4>
+                <p>Developed Python and SQL pipeline components, automated data-quality checks, diagnostic reports, and reference-table lookups. Tested and delivered assigned modules while coordinating integration with the team.</p>
+                <h4>Context</h4>
+                <p>The work combined technical implementation with requests from cross-functional teams.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="project-card" data-project-card data-category="business-operations" aria-labelledby="project-hainan">
+            <div class="project-topline">
+              <span class="project-type">Internship</span>
+              <span class="project-category">Business &amp; Operations</span>
+            </div>
+            <p class="project-org">Hainan Baitai Shengkun Management Technology Services Co., Ltd.</p>
+            <h3 id="project-hainan">Financial Data, Ready for Decisions</h3>
+            <p class="project-role">Data Operations &amp; Investment Research Intern</p>
+            <p class="project-date">Jun–Aug 2024</p>
+            <p class="project-summary">Prepared financial and market data for analysis, tested a stock-market intelligence platform, and developed industry research materials.</p>
+            <ul class="tag-list" aria-label="Technologies and methods">
+              <li>Data Cleaning</li>
+              <li>Platform Testing</li>
+              <li>Investment Research</li>
+            </ul>
+            <details class="project-details">
+              <summary>Explore the work</summary>
+              <div class="details-body">
+                <h4>Challenge</h4>
+                <p>Raw financial records and market information required consistent quality checks before use in analysis and research.</p>
+                <h4>Contribution</h4>
+                <p>Resolved duplicates, missing values, inconsistent formats, and anomalies. Consolidated platform-testing feedback and examined data completeness, company attribution, and news alerts.</p>
+                <h4>Research</h4>
+                <p>Prepared a 30-page microgrid industry report and additional thematic research materials.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="project-card" data-project-card data-category="business-operations" aria-labelledby="project-piano">
+            <div class="project-topline">
+              <span class="project-type project-type-violet">Co-founded Project</span>
+              <span class="project-category">Business &amp; Operations</span>
+            </div>
+            <p class="project-org">International Piano Masterclass</p>
+            <h3 id="project-piano">Behind the Performance</h3>
+            <p class="project-role">Project Co-Founder &amp; Technical Lead</p>
+            <p class="project-date">Mar–Aug 2025</p>
+            <p class="project-summary">Co-founded an international piano masterclass and led data operations and technical support from planning through delivery.</p>
+            <ul class="tag-list" aria-label="Technologies and methods">
+              <li>SQL</li>
+              <li>Website Operations</li>
+              <li>Planning</li>
+              <li>Data Coordination</li>
+            </ul>
+            <details class="project-details">
+              <summary>Explore the work</summary>
+              <div class="details-body">
+                <h4>Challenge</h4>
+                <p>Admissions, payments, schedules, logistics, and expenses needed coordinated tracking throughout the program.</p>
+                <h4>Contribution</h4>
+                <p>Managed the admissions website and backend data, organized project records with SQL and Excel, and worked with finance on changing budget estimates.</p>
+                <h4>Outcome</h4>
+                <p>Reviewed more than 120 applications for a program that enrolled 15 students with completed tuition payments.</p>
+                <h4>Context</h4>
+                <p>Developed in partnership with Shanghai Songyi Education Technology Co., Ltd.</p>
+              </div>
+            </details>
+          </article>
+
+          <article class="project-card" data-project-card data-category="research" aria-labelledby="project-harvard">
+            <div class="project-topline">
+              <span class="project-type project-type-cyan">Seminar Project</span>
+              <span class="project-category">Research</span>
+            </div>
+            <p class="project-org">Harvard Globalization Seminar Project with Dr. Pol Antràs</p>
+            <h3 id="project-harvard">Modeling a Connected World</h3>
+            <p class="project-role">Student Modeling Researcher</p>
+            <p class="project-date">May–Aug 2023</p>
+            <p class="project-summary">Built a parameterized Python simulation to explore tariffs, supply chains, and globalization dynamics.</p>
+            <ul class="tag-list" aria-label="Technologies and methods">
+              <li>Python</li>
+              <li>Plotly</li>
+              <li>Simulation</li>
+              <li>International Trade</li>
+            </ul>
+            <details class="project-details">
+              <summary>Explore the work</summary>
+              <div class="details-body">
+                <h4>Scope</h4>
+                <p>Integrated 25 years of economic and trade data across more than 100 countries, with more than 35 variables and 200 scenarios.</p>
+                <h4>Contribution</h4>
+                <p>Created trend charts, scenario comparisons, and dynamic model outputs using Python and Plotly, and compared assumptions against historical patterns.</p>
+                <h4>Communication</h4>
+                <p>Produced an extended English research paper and delivered a 30-minute presentation.</p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey" aria-labelledby="journey-heading">
+      <div class="wrap">
+        <div class="section-grid">
+          <div class="section-head">
+            <p class="section-label">03 / JOURNEY</p>
+            <h2 id="journey-heading">Learning, building, and connecting the dots.</h2>
+          </div>
+          <div class="section-copy">
+            <p>A timeline of study, work, and projects that shaped how I approach data and decisions.</p>
+          </div>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <p class="timeline-date">Sep 2023–Jul 2024</p>
+            <div class="timeline-content">
+              <h3>University of Rochester</h3>
+              <p>Studied business with foundational coursework in economics, business analytics, and data analysis.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">Sep 2024–Expected May 2027</p>
+            <div class="timeline-content">
+              <h3>Boston University</h3>
+              <p>B.S. in Data Science, minor in Business Administration &amp; Management.</p>
+              <p>Coursework includes probability and statistics, machine learning, algorithms, data structures, business analytics, and financial analysis.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">Mar–Aug 2025</p>
+            <div class="timeline-content">
+              <h3>International Piano Masterclass</h3>
+              <p>Co-founded an education project and led its technical and data operations.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">Sep 2025–Present</p>
+            <div class="timeline-content">
+              <h3>Student Advisor, Boston University Department of Data Science</h3>
+              <p>Support first-year students with course planning, academic decisions, and research pathways.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-date">Jul–Aug 2026</p>
+            <div class="timeline-content">
+              <h3>NIO</h3>
+              <p>Applied Python, SQL, and data-quality practices to internal data systems.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="beyond" aria-labelledby="beyond-heading">
+      <div class="wrap">
+        <div class="beyond-panel">
+          <div class="section-head">
+            <p class="section-label">BEYOND THE CODE</p>
+            <h2 id="beyond-heading">People are part of the system.</h2>
+          </div>
+          <div class="beyond-body">
+            <p>As a student advisor, I help students navigate academic planning, course selection, and research opportunities. I value clear communication as much as technical precision.</p>
+            <div class="recognition">
+              <h3>Recognition</h3>
+              <ul class="recognition-list">
+                <li>
+                  <span class="recognition-name">National Economics Challenge</span>
+                  <span class="recognition-detail">Top 5% Brown Division (2021); Top 3% / Silver (2022)</span>
+                </li>
+                <li>
+                  <span class="recognition-name">Beijing Innovation Business Simulation</span>
+                  <span class="recognition-detail">First Place, Best Trader</span>
+                </li>
+                <li>
+                  <span class="recognition-name">Future Business Leaders of America</span>
+                  <span class="recognition-detail">First Place Team, Gold Presentation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="connect" aria-labelledby="connect-heading">
+      <div class="wrap connect-grid">
+        <div class="section-head">
+          <p class="section-label">04 / CONNECT</p>
+          <h2 id="connect-heading">Let's connect the dots.</h2>
+          <p class="section-copy">Explore my work and connect with me online.</p>
+        </div>
+        <div class="connect-links">
+          <a class="connect-link" href="https://www.linkedin.com/in/chang-chi-bu/" target="_blank" rel="noopener noreferrer">
+            <span class="connect-platform">LinkedIn</span>
+            <span class="connect-handle">linkedin.com/in/chang-chi-bu</span>
+            <span class="connect-arrow" aria-hidden="true">↗</span>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+          <a class="connect-link" href="https://github.com/ChangChi23" target="_blank" rel="noopener noreferrer">
+            <span class="connect-platform">GitHub</span>
+            <span class="connect-handle">github.com/ChangChi23</span>
+            <span class="connect-arrow" aria-hidden="true">↗</span>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-name">Chang Chi</p>
+      <p class="footer-tagline">Built with curiosity, code, and a business lens.</p>
+    </div>
+  </footer>
+</body>
+</html>
